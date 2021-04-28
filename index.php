@@ -12,17 +12,15 @@
 
 		<!-- bootstrap grid -->
 		<div class="row">
-			<div class="col">
-				<div>1 of 2</div>
+			<div class="col-12 col-md-6 box box-titles">
+				<h2>Bob Dylan</h2>
+				<h3>Discography</h3>
 			</div>
-			<div class="col">
-				<div>2 of 2</div>
-				<ul>
-					<li>ww</li>
-					<li>ww</li>
-					<li>ww</li>
-					<li>ww</li>
-				</ul>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-6 no-padding" id="albums">
+
+
 			</div>
 		</div>
 		<!-- bootstrap grid -->
