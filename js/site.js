@@ -98,6 +98,19 @@ var Site = {
 									<div class="search-spotify"><a href="https://open.spotify.com/search/Bob Dylan ' + myArray2[i].title + '" target="_blank"><i class="fab fa-spotify"></i> Listen Album</a></div>\
 								</div>';
   						$('#albums').append(bloque);
+
+/*
+  						var newCard = {
+  						  name: myArray2[i].year + myArray2[i].title,
+  						  desc: 'myArray2[i].title',
+  						  idList: myList,
+  						  pos: 'top'
+  						};
+
+  						window.Trello.post('/cards/', newCard, creationSuccess);
+*/
+
+
 					}
 		        }
 		    }
@@ -131,6 +144,7 @@ var Site = {
 		  console.log(JSON.stringify(data, null, 2));
 		};
 
+		/*
 		var newCard = {
 		  name: 'kbz test 1',
 		  desc: 'This is the description of our new card.',
@@ -138,6 +152,7 @@ var Site = {
 		  idList: myList,
 		  pos: 'top'
 		};
+		*/
 
 		// window.Trello.post('/cards/', newCard, creationSuccess);
 	}
