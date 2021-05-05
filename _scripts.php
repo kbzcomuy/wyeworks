@@ -1,5 +1,9 @@
-	<!-- jquery 1.12.4 -->
-	<script type="text/javascript" src="/vendor/jquery/jquery-1.12.4.min.js"></script>
+	<!-- jquery 3.3.1 -->
+	<!-- <script type="text/javascript" src="/vendor/jquery/jquery-1.12.4.min.js"></script> -->
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
 <?php /*
 	<!-- cdn jquery 1.12.4 -->
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -16,6 +20,9 @@
 	<!-- font-awesome 5.13.0 -->
 	<script type="text/javascript" src="/vendor/font-awesome/js/all.min.js"></script>
 */?>
+
+	<!-- trello api -->
+	<script src="https://api.trello.com/1/client.js?key=dffae89d75355f60be1a4167f1e1dade"></script>
 
 	<!-- vegas v2.5.1 -->
 	<script type="text/javascript" src="/vendor/vegas/vegas.min.js"></script>
