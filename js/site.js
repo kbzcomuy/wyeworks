@@ -88,8 +88,8 @@ var Site = {
 
 					for (let i = 0; i < myArray2.length; i++) {
 						if (checkDecade != myArray2[i].decade) {
-							var kk = '<div class="decade-separator">' + myArray2[i].decade.substr(2) + '</div>';
-  							$('#albums').append(kk);
+							var separator = '<div class="decade-separator">' + myArray2[i].decade.substr(2) + '</div>';
+  							$('#albums').append(separator);
 						}
 						checkDecade = myArray2[i].decade;
 						var bloque = '<div class="album box" id="album' + i + '">\
