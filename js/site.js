@@ -33,6 +33,7 @@ var Site = {
 	// kbzJquery
 	kbzJquery: function(){
 
+
 		function readTextFile(file) {
 			var rawFile = new XMLHttpRequest();
 			rawFile.open("GET", file);
@@ -71,7 +72,7 @@ var Site = {
 
 						// console.log(i + " año = " + yearAlbum);
 						// console.log(i + " título = " + titleAlbum);
-						console.log(i + " título = " + decadeAlbum);
+						// console.log(i + " título = " + decadeAlbum);
 
 						if (checkDecade != decadeAlbum) {
 							myArrayDecades.push(decadeAlbum);
@@ -105,9 +106,40 @@ var Site = {
 
 		readTextFile("/data/discography.txt");
 
+		var authenticationSuccess = function() {
+		  console.log('Successful authentication');
+		};
+		var authenticationFailure = function() {
+		  console.log('Failed authentication');
+		};
+		window.Trello.authorize({
+			type: 'popup',
+			name: 'Getting Started Application',
+			token: '144f3aed13959f5ea7369a796d84c9ce25d0bb5f9ea6b2111bd696484329c587',
+			scope: {
+				read: 'true',
+				write: 'true' },
+			expiration: 'never',
+			success: authenticationSuccess,
+			error: authenticationFailure
+		});
 
+		var myList = '6092fa7c26191c5f8b092683';
 
+		var creationSuccess = function (data) {
+		  console.log('Card created successfully.');
+		  console.log(JSON.stringify(data, null, 2));
+		};
 
+		var newCard = {
+		  name: 'kbz test 1',
+		  desc: 'This is the description of our new card.',
+		  // Place this card at the top of our list
+		  idList: myList,
+		  pos: 'top'
+		};
+
+		// window.Trello.post('/cards/', newCard, creationSuccess);
 	}
 }
 
